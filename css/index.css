@@ -425,3 +425,12 @@ pricing__header {
   border-top-left-radius: none !important;
   border-bottom-left-radius: none !important;
 }
+
+.post-footer {
+  background-color: #16697a;
+  display: flex;
+  justify-items: flex-start;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 12px;
+}
