@@ -618,3 +618,81 @@ Media queries
     text-align: center;
   }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+  .nav-bar {
+    max-width: 100%;
+    padding: 0 3rem;
+  }
+
+  .header__desc {
+    max-width: 90%;
+  }
+
+  .title--extra-large {
+    font-size: 4rem;
+  }
+
+  .nav-bar__title--left-spacing {
+    padding-left: 0;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item--flex {
+    padding: 0 0rem 0 1rem;
+  }
+
+  .product-container {
+    max-width: 90%;
+  }
+
+  .container {
+    max-width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .feedback__card--span-full {
+    grid-column: span 2;
+  }
+
+  .team-body__card--span-full {
+    grid-column: span 2;
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  .team-body__card__image--full-heigh {
+    height: 100%;
+    width: 60%;
+  }
+
+  .team__body__card--first-child-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .pricing__video-container__video {
+    width: 70%;
+  }
+
+  .footer__menu__card--span-full {
+    grid-column: span 2;
+  }
+
+  .footer__menu__card__form__input {
+    width: 100%;
+  }
+}
