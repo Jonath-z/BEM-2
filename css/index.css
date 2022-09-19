@@ -18,6 +18,10 @@ html {
   text-align: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -113,6 +117,12 @@ html {
   padding-bottom: 10rem;
 }
 
+.header-btn-container--flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn {
   border: none;
   background-color: transparent;
@@ -160,7 +170,7 @@ pricing__header {
   font-size: 2rem;
 }
 
-.card--bordered {
+.card--outlined {
   border: 1px solid #e8e8e8;
   padding: 3rem;
 }
@@ -433,4 +443,178 @@ pricing__header {
   padding: 1rem 3rem;
   color: white;
   font-size: 12px;
+}
+
+/* 
+Media queries 
+*/
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mobile-nav__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu--flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  .title--extra-large {
+    font-size: 2rem;
+  }
+
+  .nav-bar__title--left-spacing {
+    padding-left: 0;
+  }
+
+  .header-container {
+    padding: 2rem;
+  }
+
+  .header__desc {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-btn-container--flex-center {
+    flex-direction: column;
+  }
+
+  .product-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10rem 0;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10rem 0;
+  }
+
+  .product-container {
+    padding: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback {
+    padding: 1rem;
+  }
+
+  .pricing__video-container__video {
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+  }
+
+  .team {
+    padding: 2rem;
+  }
+
+  .container--grid {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+
+  .contact {
+    padding: 2rem;
+  }
+
+  .contact__sub-container {
+    width: 100%;
+  }
+
+  .contact__form__sub-from {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact__form__button {
+    width: 100%;
+  }
+
+  .pre-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    width: unset;
+  }
+
+  .pre-footer__title {
+    text-align: center;
+  }
+
+  .pre-footer__description {
+    text-align: center;
+  }
+
+  .pre-footer__button {
+    width: 100%;
+  }
+
+  .footer {
+    width: unset;
+    padding: 1rem;
+  }
+
+  .footer__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 0;
+    gap: 3rem;
+    border-bottom: none;
+  }
+
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+
+  .footer__menu__item {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .footer__menu__card__form__btn {
+    border-radius: unset;
+  }
+
+  .post-footer {
+    text-align: center;
+  }
 }
