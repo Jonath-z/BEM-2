@@ -38,21 +38,22 @@
 
       <!-- nav on mobile screen -->
       <nav class="mobile-nav">
-       <div class="mobile-nav__header">
-         <h1 class="title title--letter-spacing nav-bar__title--left-spacing">
-          KMarketer
-         </h1>
-         <ul class="menu item--flex">
-          <li class="item">
-            <img src="./images/seach-icon.svg" />
-          </li>
-          <li class="item">
-            <img src="./images/shopping-card-icon.svg" />
-          </li>
-          <li class="item">
-            <img src="./images/menu-icon.svg" />
-          </li>
-       </div>
+        <div class="mobile-nav__header">
+          <h1 class="title title--letter-spacing nav-bar__title--left-spacing">
+            KMarketer
+          </h1>
+          <ul class="menu item--flex">
+            <li class="item">
+              <img src="./images/seach-icon.svg" />
+            </li>
+            <li class="item">
+              <img src="./images/shopping-card-icon.svg" />
+            </li>
+            <li class="item">
+              <img src="./images/menu-icon.svg" />
+            </li>
+          </ul>
+        </div>
 
         <ul class="menu menu--flex-col">
           <li class="item">Home</li>
@@ -93,11 +94,9 @@
             <img
               src="./images/bag-icon.svg"
               alt="bag-icon"
-              class="card__header__image"
+              class="card-image"
             />
-            <p class="item item--text-black card__header__title">
-              Digital Marketing
-            </p>
+            <p class="item item--text-black card-title">Digital Marketing</p>
           </div>
           <p class="card__desc item">
             the quick fox jumps over the lazy dog the quick fox jumps over the
@@ -109,11 +108,9 @@
             <img
               src="./images/icon-2svg.svg"
               alt="bag-icon"
-              class="card__header__image"
+              class="card-image"
             />
-            <p class="item item--text-black card__header__title">
-              Digital Marketing
-            </p>
+            <p class="item item--text-black card-title">Digital Marketing</p>
           </div>
           <p class="card__desc item">
             the quick fox jumps over the lazy dog the quick fox jumps over the
@@ -122,14 +119,8 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img
-              src="./images/icon-3.svg"
-              alt="bag-icon"
-              class="card__header__image"
-            />
-            <p class="item item--text-black card__header__title">
-              Business growing
-            </p>
+            <img src="./images/icon-3.svg" alt="bag-icon" class="card-image" />
+            <p class="item item--text-black card-title">Business growing</p>
           </div>
           <p class="card__desc item">
             the quick fox jumps over the lazy dog the quick fox jumps over the
@@ -138,12 +129,8 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img
-              src="./images/icon-4.svg"
-              alt="bag-icon"
-              class="card__header__image"
-            />
-            <p class="item item--text-black card__header__title">
+            <img src="./images/icon-4.svg" alt="bag-icon" class="card-image" />
+            <p class="item item--text-black card-title">
               National top 50 firms
             </p>
           </div>
@@ -154,12 +141,8 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img
-              src="./images/icon-5.svg"
-              alt="bag-icon"
-              class="card__header__image"
-            />
-            <p class="item item--text-black card__header__title">
+            <img src="./images/icon-5.svg" alt="bag-icon" class="card-image" />
+            <p class="item item--text-black card-title">
               National top 50 firms
             </p>
           </div>
@@ -170,14 +153,8 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img
-              src="./images/icon-6.svg"
-              alt="bag-icon"
-              class="card__header__image"
-            />
-            <p class="item item--text-black card__header__title">
-              Web Development
-            </p>
+            <img src="./images/icon-6.svg" alt="bag-icon" class="card-image" />
+            <p class="item item--text-black card-title">Web Development</p>
           </div>
           <p class="card__desc item">
             the quick fox jumps over the lazy dog the quick fox jumps over the
@@ -200,20 +177,18 @@
         </p>
       </div>
       <div class="pricing__video-container">
-        <div class="pricing__video-container__cover item--flex-center">
+        <div class="pricing__cover item--flex-center">
           <img
             src="./images/cover.svg"
             alt="video cover"
-            class="pricing__video-container__video"
+            class="pricing__video"
           />
-          <div
-            class="pricing__video-container__cover__play-vector__container item--flex-center"
-          >
+          <div class="pricing__play-vector item--flex-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="pricing__video-container__cover__play-vector__container__vector item--flex-center"
+              class="pricing__play-icon item--flex-center"
             >
               <path
                 fillRule="evenodd"
@@ -225,203 +200,221 @@
         </div>
       </div>
     </section>
-      
+
     <!-- feedback container -->
     <section class="feedback">
-        <div class="feedback__header">
-          <h1 class="title title--large item--center">What Clients Say</h1>
-          <p class="item item--center">
-            Problems trying to resolve the conflict between <br />
-            the two major realms of Classical physics: Newtonian mechanics
+      <div class="feedback__header">
+        <h1 class="title title--large item--center">What Clients Say</h1>
+        <p class="item item--center">
+          Problems trying to resolve the conflict between <br />
+          the two major realms of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <div class="container container--grid feedback">
+        <div class="feedback__card feedback__card--span-full">
+          <div class="feedback__card-header">
+            <img src="./images/stars.svg" />
+          </div>
+          <p class="feedback__card-body item item--lighter item--small">
+            Slate helps you see how many Lorem ipsum dolor sit. Incidunt,
+            possimus accusamus. Fuga quis odio architecto nam exercitationem!
+            Beatae, praesentium, sequi fuga esse saepe quae<br />
+            voluptate minus? more days you need to work to<br />
+            reach your financial goal.
           </p>
-        </div>
-        <div class="container container--grid feedback ">
-          <div class="feedback__card feedback__card--span-full">
-            <div class="feedback__card__header">
-              <img src="./images/stars.svg" />
-            </div>
-            <p
-              class="feedback__card__body item item--lighter item--small"
-            >
-              Slate helps you see how many Lorem ipsum dolor sit. Incidunt, possimus accusamus. Fuga quis odio architecto nam exercitationem! Beatae, praesentium, sequi fuga esse saepe quae<br/> voluptate minus?
-              more days you need to work to<br />
-              reach your financial goal.
-            </p>
-            <div class="feedback__card__footer">
-              <img
-                src="./images/huma1.jpeg"
-                alt="human1"
-                class="feedback__card__footer__img"
-              />
-              <div class="feedback__card__footer__content">
-                <p
-                  class="feedback__card__footer__content__item feedback__card__footer__content__item--yellow"
-                >
-                  Regina Miles
-                </p>
-                <p class="feedback__card__footer__content__item">
-                  Designer
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback__card">
-            <div class="feedback__card__header">
-              <img src="./images/stars.svg" />
-            </div>
-            <p
-              class="feedback__card__body item item--lighter item--small"
-            >
-              Slate helps you see how many Lorem ipsum dolor sit. Incidunt, possimus accusamus. Fuga quis odio architecto nam exercitationem! Beatae, praesentium, sequi fuga esse saepe quae<br/> voluptate minus?
-              more days you need to work to<br />
-              reach your financial goal.
-            </p>
-            <div class="feedback__card__footer">
-              <img
-                src="./images/human2.jpeg"
-                alt="human1"
-                class="feedback__card__footer__img"
-              />
-              <div class="feedback__card__footer__content">
-                <p
-                  class="feedback__card__footer__content__item feedback__card__footer__content__item--yellow"
-                >
-                  Regina Miles
-                </p>
-                <p class="feedback__card__footer__content__item">
-                  Designer
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback__card">
-            <div class="feedback__card__header">
-              <img src="./images/stars.svg" />
-            </div>
-            <p
-              class="feedback__card__body item item--lighter item--small"
-            >
-              Slate helps you see how many Lorem ipsum dolor sit. Incidunt, possimus accusamus. Fuga quis odio architecto nam exercitationem! Beatae, praesentium, sequi fuga esse saepe quae<br/> voluptate minus?
-              more days you need to work to<br />
-              reach your financial goal.
-            </p>
-            <div class="feedback__card__footer">
-              <img
-                src="./images/human3.jpeg"
-                alt="human1"
-                class="feedback__card__footer__img"
-              />
-              <div class="feedback__card__footer__content">
-                <p
-                  class="feedback__card__footer__content__item feedback__card__footer__content__item--yellow"
-                >
-                  Regina Miles
-                </p>
-                <p class="feedback__card__footer__content__item">
-                  Designer
-                </p>
-              </div>
+          <div class="feedback__card-footer">
+            <img
+              src="./images/huma1.jpeg"
+              alt="human1"
+              class="feedback__footer-img"
+            />
+            <div class="feedback__footer-body">
+              <p class="feedback__footer-item feedback__footer-item--yellow">
+                Regina Miles
+              </p>
+              <p class="feedback__footer-item">Designer</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- team -->
-      <section class="team">
-        
-        <div class="team-header">
-          <h1 class="title title--large item--center">Meet Our Team</h1>
-          <p class="item item--center">
-            Problems trying to resolve the conflict between<br/> 
-            the two major realms of Classical physics: Newtonian mechanics
+        <div class="feedback__card">
+          <div class="feedback__card-header">
+            <img src="./images/stars.svg" />
+          </div>
+          <p class="feedback__card-body item item--lighter item--small">
+            Slate helps you see how many Lorem ipsum dolor sit. Incidunt,
+            possimus accusamus. Fuga quis odio architecto nam exercitationem!
+            Beatae, praesentium, sequi fuga esse saepe quae<br />
+            voluptate minus? more days you need to work to<br />
+            reach your financial goal.
           </p>
-        </div>
-
-        <div class="container container--grid">
-            <div class="team-body__card card--outlined team-body__card--span-full">
-                <img class="team-body__card__image team-body__card__image--full-heigh" src="./images/human5.jpg"/>
-                <div class="team__body__card--first-child-col">
-                  <p class="team-body__card__name item--center">Ashley Fletcher</p>
-                  <div class="team-body__card__footer">
-                    <p class="team-body__card__footer__item item item--center">CEO</p>
-                    <p class=" team-body__card__footer__item item--flex-center item--flex-center-gap">
-                      <img src="./images/ant-design_facebook-filled.svg"  alt="facebook"/>
-                      <img src="./images/instagram.svg"  alt="instagram"/>
-                      <img src="./images/tweeter.svg"  alt="tweeter"/>
-                    </p>
-                  </div>
-                </div>
+          <div class="feedback__card-footer">
+            <img
+              src="./images/human2.jpeg"
+              alt="human1"
+              class="feedback__footer-img"
+            />
+            <div class="feedback__footer-body">
+              <p class="feedback__footer-item feedback__footer-item--yellow">
+                Regina Miles
+              </p>
+              <p class="feedback__footer-item">Designer</p>
             </div>
-            <div class="team-body__card card--outlined">
-              <img class="team-body__card__image" src="./images/human6.jpg"/>
-              <p class="team-body__card__name item--center">Alex Queen</p>
-              <div class="team-body__card__footer">
-                <p class="team-body__card__footer__item item item--center">CEO</p>
-                <p class="team-body__card__footer__item item--flex-center item--flex-center-gap">
-                  <img src="./images/ant-design_facebook-filled.svg"  alt="facebook"/>
-                  <img src="./images/instagram.svg"  alt="instagram"/>
-                  <img src="./images/tweeter.svg"  alt="tweeter"/>
-                </p>
-              </div>
           </div>
-          <div class="team-body__card card--outlined">
-            <img class="team-body__card__image" src="./images/human4.jpeg"/>
-            <p class="team-body__card__name item--center">Jenny L.</p>
-            <div class="team-body__card__footer">
-              <p class="team-body__card__footer__item item item--center">CEO</p>
-              <p class="team-body__card__footer__item item--flex-center item--flex-center-gap">
-                <img src="./images/ant-design_facebook-filled.svg"  alt="facebook"/>
-                <img src="./images/instagram.svg"  alt="instagram"/>
-                <img src="./images/tweeter.svg"  alt="tweeter"/>
+        </div>
+        <div class="feedback__card">
+          <div class="feedback__card-header">
+            <img src="./images/stars.svg" />
+          </div>
+          <p class="feedback__card-body item item--lighter item--small">
+            Slate helps you see how many Lorem ipsum dolor sit. Incidunt,
+            possimus accusamus. Fuga quis odio architecto nam exercitationem!
+            Beatae, praesentium, sequi fuga esse saepe quae<br />
+            voluptate minus? more days you need to work to<br />
+            reach your financial goal.
+          </p>
+          <div class="feedback__card-footer">
+            <img
+              src="./images/human3.jpeg"
+              alt="human1"
+              class="feedback__footer-img"
+            />
+            <div class="feedback__footer-body">
+              <p class="feedback__footer-item feedback__footer-item--yellow">
+                Regina Miles
+              </p>
+              <p class="feedback__footer-item">Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team -->
+    <section class="team">
+      <div class="team-header">
+        <h1 class="title title--large item--center">Meet Our Team</h1>
+        <p class="item item--center">
+          Problems trying to resolve the conflict between<br />
+          the two major realms of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+
+      <div class="container container--grid">
+        <div class="team-card card--outlined team-card--span-full">
+          <img
+            class="team-card__image team-card__image--full-heigh"
+            src="./images/human5.jpg"
+          />
+          <div class="team-card--col">
+            <p class="team-card__name item--center">Ashley Fletcher</p>
+            <div class="team-card__footer">
+              <p class="item item--center">CEO</p>
+              <p class="item item--flex-center item--flex-center-gap">
+                <img
+                  src="./images/ant-design_facebook-filled.svg"
+                  alt="facebook"
+                />
+                <img src="./images/instagram.svg" alt="instagram" />
+                <img src="./images/tweeter.svg" alt="tweeter" />
               </p>
             </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- Contacts -->
-      <section class="contact">
-        <div class="contact__sub-container">
-          <p class="title">Contact Us</p>
-          <h1 class="title title--large">Make an Appointment</h1>
-          <div class="contact__form">
-          <div class="contact__form__sub-from">
-            <input type="text" placeholder="Name" class="contact__form__sub-from__input"/>
-            <input type="email" placeholder="Email" class="contact__form__sub-from__input" />
-
-           <select aria-placeholder="Please select" class="contact__form__sub-from__input">
-            <option>Select</option>
-           </select>
-
-           <select aria-placeholder="4:00 available" class="contact__form__sub-from__input">
-            <option>12:00</option>
-            <option>4:00</option>
-            <option>8:00</option>
-            <option>10:00</option>
-           </select>
-          </div>
-
-           <textarea placeholder="message" class="contact__form__textarea"></textarea>
-           <button class="btn btn--active contact__form__button">Book Appointment</button>
           </div>
         </div>
-      </section>
-
-      <!-- pre-footer -->
-      <section class="pre-footer">
-        <div>
-          <h1 class="title pre-footer__title">Consulting Agency For Your Business</h1>
-          <p class="item item--lighter pre-footer__description">the quick fox jumps over the lazy dog</p>
+        <div class="team-card card--outlined">
+          <img class="team-card__image" src="./images/human6.jpg" />
+          <p class="team-card__name item--center">Alex Queen</p>
+          <div class="team-card__footer">
+            <p class="item item--center">CEO</p>
+            <p class="item--flex-center item--flex-center-gap">
+              <img
+                src="./images/ant-design_facebook-filled.svg"
+                alt="facebook"
+              />
+              <img src="./images/instagram.svg" alt="instagram" />
+              <img src="./images/tweeter.svg" alt="tweeter" />
+            </p>
+          </div>
         </div>
-        <button class="btn btn--active pre-footer__button">Contact Us</button>
-      </section>
+        <div class="team-card card--outlined">
+          <img class="team-card__image" src="./images/human4.jpeg" />
+          <p class="team-card__name item--center">Jenny L.</p>
+          <div class="team-card__footer">
+            <p class="item item--center">CEO</p>
+            <p class="item--flex-center item--flex-center-gap">
+              <img
+                src="./images/ant-design_facebook-filled.svg"
+                alt="facebook"
+              />
+              <img src="./images/instagram.svg" alt="instagram" />
+              <img src="./images/tweeter.svg" alt="tweeter" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <section class="footer-container">
+    <!-- Contacts -->
+    <section class="contact">
+      <div class="contact__sub-container">
+        <p class="title">Contact Us</p>
+        <h1 class="title title--large">Make an Appointment</h1>
+        <div class="contact__form">
+          <div class="contact__form-container">
+            <input type="text" placeholder="Name" class="contact__form-input" />
+            <input
+              type="email"
+              placeholder="Email"
+              class="contact__form-input"
+            />
+
+            <select
+              aria-placeholder="Please select"
+              class="contact__form-input"
+            >
+              <option>Select</option>
+            </select>
+
+            <select
+              aria-placeholder="4:00 available"
+              class="contact__form-input"
+            >
+              <option>12:00</option>
+              <option>4:00</option>
+              <option>8:00</option>
+              <option>10:00</option>
+            </select>
+          </div>
+
+          <textarea
+            placeholder="message"
+            class="contact__form-textarea"
+          ></textarea>
+          <button class="btn btn--active contact__form-button">
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- pre-footer -->
+    <section class="pre-footer">
+      <div>
+        <h1 class="title pre-footer__title">
+          Consulting Agency For Your Business
+        </h1>
+        <p class="item item--lighter pre-footer__description">
+          the quick fox jumps over the lazy dog
+        </p>
+      </div>
+      <button class="btn btn--active pre-footer__button">Contact Us</button>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-container">
       <footer class="footer">
         <div class="footer__header">
-          <h1 class="footer__header__title">KMarketer</h1>
-          <div class="footer__icons__container">
+          <h1 class="footer__title">KMarketer</h1>
+          <div class="footer__icons-container">
             <img src="./images/footer-fb.svg" />
             <img src="./images/footer-Ig.svg" />
             <img src="./images/footer-tweeter.svg" />
@@ -429,60 +422,65 @@
           </div>
         </div>
         <div class="footer__menu">
-          <div class="footer__menu__card">
-            <h2 class="footer__menu__card__title">Company Info</h2>
-            <ul class="footer__menu__card__list item--lighter">
-              <li class="footer__menu__item">About Us</li>
-              <li class="footer__menu__item">Carrier</li>
-              <li class="footer__menu__item">We are hiring</li>
-              <li class="footer__menu__item">Blog</li>
+          <div class="footer__card">
+            <h2 class="footer__card-title">Company Info</h2>
+            <ul class="footer__card-menu item item--lighter">
+              <li class="footer__menu-item">About Us</li>
+              <li class="footer__menu-item">Carrier</li>
+              <li class="footer__menu-item">We are hiring</li>
+              <li class="footer__menu-item">Blog</li>
             </ul>
           </div>
 
-          <div class="footer__menu__card">
-            <h2 class="footer__menu__card__title">Legal</h2>
-            <ul class="footer__menu__card__list item--lighter">
-              <li class="footer__menu__item">About Us</li>
-              <li class="footer__menu__item">Carrier</li>
-              <li class="footer__menu__item">We are hiring</li>
-              <li class="footer__menu__item">Blog</li>
+          <div class="footer__card">
+            <h2 class="footer__card-title">Legal</h2>
+            <ul class="footer__card-menu item item--lighter">
+              <li class="footer__menu-item">About Us</li>
+              <li class="footer__menu-item">Carrier</li>
+              <li class="footer__menu-item">We are hiring</li>
+              <li class="footer__menu-item">Blog</li>
             </ul>
           </div>
 
-          <div class="footer__menu__card">
-            <h2 class="footer__menu__card__title">Features</h2>
-            <ul class="footer__menu__card__list item--lighter">
-              <li class="footer__menu__item">Business Marketing</li>
-              <li class="footer__menu__item">User Analytic</li>
-              <li class="footer__menu__item">Live Chat</li>
-              <li class="footer__menu__item">Unlimited Support</li>
+          <div class="footer__card">
+            <h2 class="footer__card-title">Features</h2>
+            <ul class="footer__card-menu item item--lighter">
+              <li class="footer__menu-item">Business Marketing</li>
+              <li class="footer__menu-item">User Analytic</li>
+              <li class="footer__menu-item">Live Chat</li>
+              <li class="footer__menu-item">Unlimited Support</li>
             </ul>
           </div>
 
-          <div class="footer__menu__card">
-            <h2 class="footer__menu__card__title">Resources</h2>
-            <ul class="footer__menu__card__list item--lighter">
-              <li class="footer__menu__item">IOS & Android</li>
-              <li class="footer__menu__item">Watch a Demo</li>
-              <li class="footer__menu__item">Customers</li>
-              <li class="footer__menu__item">API</li>
+          <div class="footer__card">
+            <h2 class="footer__card-title">Resources</h2>
+            <ul class="footer__card-menu item item--lighter">
+              <li class="footer__menu-item">IOS & Android</li>
+              <li class="footer__menu-item">Watch a Demo</li>
+              <li class="footer__menu-item">Customers</li>
+              <li class="footer__menu-item">API</li>
             </ul>
           </div>
 
-          <div class="footer__menu__card footer__menu__card--span-full">
-            <h2 class="footer__menu__card__title">Get In Touch</h2>
-            <div class="footer__menu__card__form">
-            <input type="email" placeholder="Your Email" class="footer__menu__card__form__input"/>
-            <button class="btn btn--active footer__menu__card__form__btn">Subscribe</button>
-          </div>
+          <div class="footer__card footer__card--span-full">
+            <h2 class="footer__card-title">Get In Touch</h2>
+            <div class="footer__card-form">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="footer__card-input"
+              />
+              <button class="btn btn--active footer__card-btn">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </footer>
 
       <div class="post-footer">
-        <p class="item-lighter">Made With Love By Jonathan Zihindula All Right Reserved </p>
+        <p>Made With Love By Jonathan Zihindula All Right Reserved</p>
       </div>
-      </section>
     </section>
   </body>
 </html>
