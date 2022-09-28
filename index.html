@@ -12,9 +12,9 @@
     <title>BEM practice | KMarketer</title>
   </head>
   <body>
-    <header class="header-container">
-      <nav class="nav-bar">
-        <h1 class="title title--letter-spacing nav-bar__title--left-spacing">
+    <header class="header">
+      <nav class="nav">
+        <h1 class="title title--letter-spacing nav__title--left-spacing">
           KMarketer
         </h1>
         <ul class="menu menu--flex">
@@ -39,7 +39,7 @@
       <!-- nav on mobile screen -->
       <nav class="mobile-nav">
         <div class="mobile-nav__header">
-          <h1 class="title title--letter-spacing nav-bar__title--left-spacing">
+          <h1 class="title title--letter-spacing nav__title--left-spacing">
             KMarketer
           </h1>
           <ul class="menu item--flex">
@@ -71,7 +71,7 @@
           small scale just do not act that way.
         </p>
       </div>
-      <div class="header-btn-container header-btn-container--flex-center">
+      <div class="header__btn-container header__btn-container--flex-center">
         <button class="btn btn--active btn--extra-rounded">
           Get quote now
         </button>
@@ -94,7 +94,7 @@
             <img
               src="./images/bag-icon.svg"
               alt="bag-icon"
-              class="card-image"
+              class="card__image"
             />
             <p class="item item--text-black card-title">Digital Marketing</p>
           </div>
@@ -108,7 +108,7 @@
             <img
               src="./images/icon-2svg.svg"
               alt="bag-icon"
-              class="card-image"
+              class="card__image"
             />
             <p class="item item--text-black card-title">Digital Marketing</p>
           </div>
@@ -119,7 +119,7 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img src="./images/icon-3.svg" alt="bag-icon" class="card-image" />
+            <img src="./images/icon-3.svg" alt="bag-icon" class="card__image" />
             <p class="item item--text-black card-title">Business growing</p>
           </div>
           <p class="card__desc item">
@@ -129,7 +129,7 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img src="./images/icon-4.svg" alt="bag-icon" class="card-image" />
+            <img src="./images/icon-4.svg" alt="bag-icon" class="card__image" />
             <p class="item item--text-black card-title">
               National top 50 firms
             </p>
@@ -141,7 +141,7 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img src="./images/icon-5.svg" alt="bag-icon" class="card-image" />
+            <img src="./images/icon-5.svg" alt="bag-icon" class="card__image" />
             <p class="item item--text-black card-title">
               National top 50 firms
             </p>
@@ -153,7 +153,7 @@
         </div>
         <div class="card card--outlined">
           <div class="card__header">
-            <img src="./images/icon-6.svg" alt="bag-icon" class="card-image" />
+            <img src="./images/icon-6.svg" alt="bag-icon" class="card__image" />
             <p class="item item--text-black card-title">Web Development</p>
           </div>
           <p class="card__desc item">
@@ -167,7 +167,7 @@
     <!-- Pricing -->
     <section class="pricing">
       <div class="pricing__header">
-        <h1 class="title item--center title--large">
+        <h1 class="pricing__title title item--center title--large">
           We are providing best <br />
           business service.
         </h1>
@@ -177,18 +177,18 @@
         </p>
       </div>
       <div class="pricing__video-container">
-        <div class="pricing__cover item--flex-center">
+        <div class="pricing__cover pricing__cover--center">
           <img
             src="./images/cover.svg"
             alt="video cover"
             class="pricing__video"
           />
-          <div class="pricing__play-vector item--flex-center">
+          <div class="pricing__play-vector pricing__play-vector--center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="pricing__play-icon item--flex-center"
+              class="pricing__play-icon pricing__play-icon--center"
             >
               <path
                 fillRule="evenodd"
@@ -204,7 +204,9 @@
     <!-- feedback container -->
     <section class="feedback">
       <div class="feedback__header">
-        <h1 class="title title--large item--center">What Clients Say</h1>
+        <h1 class="feedback__title title title--large item--center">
+          What Clients Say
+        </h1>
         <p class="item item--center">
           Problems trying to resolve the conflict between <br />
           the two major realms of Classical physics: Newtonian mechanics
@@ -291,7 +293,7 @@
 
     <!-- team -->
     <section class="team">
-      <div class="team-header">
+      <div class="team__header">
         <h1 class="title title--large item--center">Meet Our Team</h1>
         <p class="item item--center">
           Problems trying to resolve the conflict between<br />
@@ -300,14 +302,14 @@
       </div>
 
       <div class="container container--grid">
-        <div class="team-card card--outlined team-card--span-full">
+        <div class="team__card team__card--outlined team__card--span-full">
           <img
-            class="team-card__image team-card__image--full-heigh"
+            class="team__card-image team__card-image--full-heigh"
             src="./images/human5.jpg"
           />
-          <div class="team-card--col">
-            <p class="team-card__name item--center">Ashley Fletcher</p>
-            <div class="team-card__footer">
+          <div class="team__card--col">
+            <p class="team__card-name item--center">Ashley Fletcher</p>
+            <div class="team__card-footer">
               <p class="item item--center">CEO</p>
               <p class="item item--flex-center item--flex-center-gap">
                 <img
@@ -320,10 +322,10 @@
             </div>
           </div>
         </div>
-        <div class="team-card card--outlined">
-          <img class="team-card__image" src="./images/human6.jpg" />
-          <p class="team-card__name item--center">Alex Queen</p>
-          <div class="team-card__footer">
+        <div class="team__card team__card--outlined">
+          <img class="team__card-image" src="./images/human6.jpg" />
+          <p class="team__card-name item--center">Alex Queen</p>
+          <div class="team__card-footer">
             <p class="item item--center">CEO</p>
             <p class="item--flex-center item--flex-center-gap">
               <img
@@ -335,10 +337,10 @@
             </p>
           </div>
         </div>
-        <div class="team-card card--outlined">
-          <img class="team-card__image" src="./images/human4.jpeg" />
-          <p class="team-card__name item--center">Jenny L.</p>
-          <div class="team-card__footer">
+        <div class="team__card team__card--outlined">
+          <img class="team__card-image" src="./images/human4.jpeg" />
+          <p class="team__card-name item--center">Jenny L.</p>
+          <div class="team__card-footer">
             <p class="item item--center">CEO</p>
             <p class="item--flex-center item--flex-center-gap">
               <img
